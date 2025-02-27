@@ -1,26 +1,31 @@
-# journalSystem
-
+Medical Journal System (Microservices Architecture)
 Overview
 
-This project is a microservices-based medical journal system designed for handling patient information. Initially developed as a monolithic system, it was later broken down into multiple services with additional functionalities, including image handling, search capabilities, and secure authentication.
+This project is a microservices-based medical journal system designed to manage patient records, observations, and communications between medical staff and patients. The system was initially built as a monolithic application and later refactored into multiple services for better scalability and maintainability.
+Tech Stack
 
-The system consists of:
-
-    Backend: Spring Boot (REST API)
+    Backend Services: Spring Boot, Quarkus (Vert.x), Node.js
     Frontend: React.js
-    Database: MySQL/PostgreSQL (or HAPI-FHIR for higher-grade implementation)
-    Containerization & Orchestration: Docker & Kubernetes
-    Additional Services:
-        Node.js Service: Image storage & annotation
-        Quarkus Service: Search functionality
-        Keycloak: Authentication & authorization
-        Apache Kafka (for stream-based communication in the advanced implementation)
+    Database: PostgreSQL/MySQL
+    Authentication: Keycloak
+    Message Queue: Apache Kafka (for advanced event-driven architecture)
+    Containerization & Orchestration: Docker, Kubernetes
 
-        Microservices Architecture
-Service	Technology	Description
-backend-service	Spring Boot	Core logic: Handles patient records, observations, encounters, and messaging.
-frontend	React.js	User interface for doctors, patients, and staff.
-image-service	Node.js	Stores and allows annotation of medical images.
-search-service	Quarkus	Enables searching for patients, conditions, and practitioner histories.
-auth-service	Keycloak	Manages authentication and API authorization.
-event-service	Apache Kafka	(Advanced) Enables streaming-based communication between services.
+Microservices Overview
+Service Name	Technology	Description
+ImageProcessing_JournalSys	Node.js	Handles image storage, retrieval, and annotation.
+frontend_journalSys	React.js	User interface for patients, doctors, and staff.
+searchService_JournalSys	Quarkus (Vert.x)	Enables reactive database searches for patients, conditions, and encounters.
+userRoleService_JournalSys	Spring Boot	Manages user roles, patient data, conditions, and encounters.
+messageService_JournalSys	Spring Boot	Handles messaging between patients, doctors, and staff.
+userService_JournalSys	Spring Boot	Manages user registration, authentication, and account-related operations.
+Features
+
+✅ User Authentication & Role-Based Access Control (RBAC)
+✅ Medical Record Management (Patients, Observations, Conditions, Encounters)
+✅ Secure Messaging System (Patients ↔ Doctors/Staff)
+✅ Image Storage & Annotation (Medical Images)
+✅ Advanced Search Functionality (By Name, Condition, Practitioner)
+✅ CI/CD Pipeline (Automated Testing & Deployment via GitHub Actions)
+✅ API Security (JWT Authentication via Keycloak)
+✅ (Advanced) Event-Driven Architecture with Kafka
