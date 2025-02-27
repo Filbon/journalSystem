@@ -28,7 +28,7 @@ This project is a **microservices-based medical journal system** designed to man
 ## Features
 - **User Authentication & Role-Based Access Control (RBAC)**
 - **Medical Record Management** (Patients, Observations, Conditions, Encounters)
-- **Secure Messaging System** (Patients ↔ Doctors/Staff)
+- **Messaging System** (Patients ↔ Doctors/Staff)
 - **Image Storage & Annotation** (Medical Images)
 - **Advanced Search Functionality** (By Name, Condition, Practitioner)
 - **CI/CD Pipeline** (Automated Testing & Deployment via GitHub Actions)
