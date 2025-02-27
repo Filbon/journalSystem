@@ -44,3 +44,9 @@ This project uses GitHub Actions for CI/CD. When changes are merged into the mai
 - **Run Unit Tests (JUnit/Postman tests)**
 - **Build Docker Images**
 - **Deploy Services to Kubernetes**
+
+## Security
+
+- **Authentication: Keycloak for OAuth2 & JWT-based API authentication.**
+- **API Security: Spring Security for access control.**
+- **Database Security: Role-based access to patient data.**
