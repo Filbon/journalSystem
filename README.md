@@ -48,3 +48,12 @@ This project uses GitHub Actions for CI/CD. When changes are merged into the mai
 - **Authentication: Keycloak for OAuth2 & JWT-based API authentication.**
 - **API Security: Spring Security for access control.**
 - **Database Security: Role-based access to patient data.**
+
+## Links to Microservices
+- [ImageProcessing_JournalSys](https://github.com/Filbon/ImageProcessing_JournalSys)
+- [frontend_journalSys](https://github.com/Filbon/frontend_journalSys)
+- [searchService_JournalSys](https://github.com/Filbon/searchService_JournalSys)
+- [userRoleService_JournalSys](https://github.com/Filbon/userRoleService_JournalSys)
+- [messageService_JournalSys](https://github.com/Filbon/messageService_JournalSys)
+- [userService_JournalSys](https://github.com/Filbon/userService_JournalSys)
+
