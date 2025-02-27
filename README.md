@@ -41,6 +41,6 @@ This project is a **microservices-based medical journal system** designed to man
 ### Deployment & CI/CD
 This project uses GitHub Actions for CI/CD. When changes are merged into the main branch, the following steps are triggered:
 
-    Run Unit Tests (JUnit/Postman tests)
-    Build Docker Images
-    Deploy Services to Kubernetes
+- **Run Unit Tests (JUnit/Postman tests)**
+- **Build Docker Images**
+- **Deploy Services to Kubernetes**
