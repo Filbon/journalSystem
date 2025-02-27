@@ -4,7 +4,7 @@
 This project is a **microservices-based medical journal system** designed to manage patient records, observations, and communications between medical staff and patients. The system was initially built as a monolithic application and later refactored into multiple services for better scalability and maintainability.
 
 ### Tech Stack
-- **Backend Services**: Spring Boot, Quarkus (Vert.x), Node.js
+- **Backend Services**: Spring Boot, Quarkus Reactive, Node.js
 - **Frontend**: React.js
 - **Database**: PostgreSQL/MySQL
 - **Authentication**: Keycloak
@@ -33,13 +33,14 @@ This project is a **microservices-based medical journal system** designed to man
 - **Advanced Search Functionality** (By Name, Condition, Practitioner)
 - **CI/CD Pipeline** (Automated Testing & Deployment via GitHub Actions)
 - **API Security** (JWT Authentication via Keycloak)
-- **(Advanced) Event-Driven Architecture with Kafka**
 
 ---
 
 ## How to Run Locally
 
-### 1. Clone the Main Repository
-```sh
-git clone https://github.com/your-username/main-repo.git
-cd main-repo
+### Deployment & CI/CD
+This project uses GitHub Actions for CI/CD. When changes are merged into the main branch, the following steps are triggered:
+
+    Run Unit Tests (JUnit/Postman tests)
+    Build Docker Images
+    Deploy Services to Kubernetes
