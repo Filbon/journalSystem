@@ -36,8 +36,6 @@ This project is a **microservices-based medical journal system** designed to man
 
 ---
 
-## How to Run Locally
-
 ### Deployment & CI/CD
 This project uses GitHub Actions for CI/CD. When changes are merged into the main branch, the following steps are triggered:
 
