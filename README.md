@@ -18,7 +18,7 @@ This project is a **microservices-based medical journal system** designed to man
 |----------------------------------|---------------------|-----------------|
 | **ImageProcessing_JournalSys**   | Node.js            | Handles image storage, retrieval, and annotation. |
 | **frontend_journalSys**          | React.js           | User interface for patients, doctors, and staff. |
-| **searchService_JournalSys**     | Quarkus (Vert.x)   | Enables reactive database searches for patients, conditions, and encounters. |
+| **searchService_JournalSys**     | Quarkus Reactive   | Enables reactive database searches for patients, conditions, and encounters. |
 | **userRoleService_JournalSys**   | Spring Boot        | Manages user roles, patient data, conditions, and encounters. |
 | **messageService_JournalSys**    | Spring Boot        | Handles messaging between patients, doctors, and staff. |
 | **userService_JournalSys**       | Spring Boot        | Manages user registration, authentication, and account-related operations. |
